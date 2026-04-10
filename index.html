@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD. Baktear Udden Marjan | Flutter Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#2563eb;
+      --secondary:#1e293b;
+      --accent:#38bdf8;
+      --bg:#f8fafc;
+      --text:#0f172a;
+      --gray:#64748b;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+
+    body{background:var(--bg);color:var(--text)}
+
+    nav{
+      position:sticky;top:0;display:flex;justify-content:space-between;
+      padding:15px 40px;background:white;box-shadow:0 2px 10px rgba(0,0,0,.05)
+    }
+
+    nav h2{color:var(--primary)}
+
+    nav ul{display:flex;gap:20px;list-style:none}
+
+    nav a{text-decoration:none;color:var(--text)}
+
+    .hero{
+      text-align:center;padding:80px 20px;
+      background:var(--primary);color:white
+    }
+
+    .hero img{
+      width:140px;height:140px;border-radius:50%;border:4px solid white;margin-bottom:15px
+    }
+
+    .hero h1{font-size:36px}
+    .hero p{margin:10px 0 20px;color:#e2e8f0}
+
+    .btn{
+      padding:10px 20px;border-radius:8px;text-decoration:none;margin:5px;display:inline-block
+    }
+
+    .btn-primary{background:white;color:var(--primary)}
+    .btn-outline{border:1px solid white;color:white}
+
+    .container{max-width:1100px;margin:auto;padding:40px 20px}
+
+    section{margin-bottom:40px}
+
+    h2{margin-bottom:15px;color:var(--primary)}
+
+    .card{background:white;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+
+    .skills,.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+
+    .skill,.project{background:white;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+
+    .project a{color:var(--primary);text-decoration:none}
+
+    footer{text-align:center;padding:20px;background:var(--secondary);color:white}
+
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Marjan.dev</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <img src="/marjan.jpg" alt="profile">
+  <h1>MD. Baktear Udden Marjan</h1>
+  <p>Flutter Developer | Building Scalable Mobile Apps</p>
+  <a href="/cv.pdf" class="btn btn-primary">Download CV</a>
+  <a href="#contact" class="btn btn-outline">Contact Me</a>
+</section>
+
+<div class="container">
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a CSE student and Flutter Developer focused on building scalable and user-friendly mobile applications using modern technologies.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Tech Stack</h2>
+  <div class="skills">
+    <div class="skill">Flutter</div>
+    <div class="skill">Dart</div>
+    <div class="skill">Firebase</div>
+    <div class="skill">REST API</div>
+    <div class="skill">Provider</div>
+    <div class="skill">Git & GitHub</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="project">
+      <h3>Unit Conversion App</h3>
+      <p>Built using Flutter + Provider with real-time calculation and clean architecture.</p>
+      <a href="https://github.com/Marjan-maxa/Unit-Conversion-App.git">View →</a>
+    </div>
+
+    <div class="project">
+      <h3>Task Manager</h3>
+      <p>REST API based Flutter app with CRUD operations and state management.</p>
+      <a href="https://github.com/Marjan-maxa/Task-Manager.git">View →</a>
+    </div>
+
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>Real-time weather application using API integration and dynamic UI.</p>
+      <a href="https://github.com/Marjan-maxa/Weather-App.git">View →</a>
+    </div>
+
+    <div class="project">
+      <h3>Lottery App</h3>
+      <p>Random number generator app with interactive UI experience.</p>
+      <a href="https://github.com/Marjan-maxa/Lottery-App.git">View →</a>
+    </div>
+
+    <div class="project">
+      <h3>YouTube Lite App</h3>
+      <p>Lightweight video browsing app focused on performance and simplicity.</p>
+      <a href="https://github.com/Marjan-maxa/Youtube-Lite-Application.git">View →</a>
+    </div>
+
+    <div class="project">
+      <h3>Media Player</h3>
+      <p>Simple mobile media player for playing audio files efficiently.</p>
+      <a href="https://github.com/Marjan-maxa/Media-Player-Application.git">View →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <p><strong>Flutter Developer (Self Learning)</strong></p>
+    <ul>
+      <li>Developed 5+ mobile applications using Flutter</li>
+      <li>Worked with REST APIs and Provider state management</li>
+      <li>Focused on UI/UX and performance optimization</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:boktimd95@gmail.com">boktimd95@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Marjan-maxa">github.com/Marjan-maxa</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/md-baktear-udden-marjan-25147b3a5/">Profile</a></p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <p>© 2026 MD. Baktear Udden Marjan</p>
+</footer>
+
+</body>
+</html>
